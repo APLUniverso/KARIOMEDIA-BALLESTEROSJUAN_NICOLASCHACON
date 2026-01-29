@@ -41,20 +41,20 @@ input[type="radio"] {
 /*-------IMPORTATE LA OPACIDAD PARA QUE SE HAGA VISIBLE-------*/
 .logo{
     opacity: 0;
-    animation: blink infinite 2s;
 }
 
 .logo img{
     width: 20vh;
+    animation: blink infinite 2s;
 }
 
 .cargar{
     opacity: 0;
-    animation: blink infinite 2s;
 }
 
 .logoPosExitoLogin img{
     width: 20vh;
+    animation: blink infinite 2s;
 }
 
 
