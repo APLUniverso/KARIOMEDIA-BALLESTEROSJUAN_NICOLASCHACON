@@ -26,17 +26,22 @@ body{
 
 .position{
     position: absolute;
+    pointer-events: none;
+    transition: all 0.6s ease;
 }
 
 /*SE OCULTAN LOS BONOTES*/
 input[type="radio"] {
-    display: none;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
 }
 
 
 /*-------IMPORTATE LA OPACIDAD PARA QUE SE HAGA VISIBLE-------*/
 .logo{
     opacity: 0;
+    animation: blink infinite 2s;
 }
 
 .logo img{
@@ -91,6 +96,8 @@ input[type="radio"] {
 }
 
 .panelLogin h1{
+    margin: 0;
+    padding: 0;
     font-size: 3vh;
 }
 
@@ -104,10 +111,12 @@ input[type="radio"] {
     font-size: 9px !important;
 }
 
-.panelLogin a{
+.panelLogin .btn{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    cursor:pointer;
 
     text-decoration: none;
     color: white;
@@ -117,21 +126,23 @@ input[type="radio"] {
 }
 
 /*-------IMPORTATE LA OPACIDAD PARA QUE SE HAGA VISIBLE-------*/
-.ingresoExitoso{
+.ingresoExitoso {
     opacity: 0;
     background-color: whitesmoke;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
 
     padding-left: 15vh;
     padding-right: 15vh;
     padding-bottom: 5vh;
 
     border-radius: 4vh;
+}
+
+.ingresoExitoso label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .ingresoExitoso h1{
@@ -163,6 +174,17 @@ input[type="radio"] {
     align-items: center;
 }
 
-#logo:checked ~ .logo{
+#logo:checked ~ .logo, #formLogin:checked ~ .panelLogin, #exitoLogin:checked ~ .ingresoExitoso{
     opacity: 1;
+    pointer-events: auto;
+}
+
+@keyframes blink {
+    0%,100%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0;
+    }
 }
