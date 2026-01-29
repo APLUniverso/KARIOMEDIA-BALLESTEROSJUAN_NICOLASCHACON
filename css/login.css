@@ -175,6 +175,70 @@ input[type="radio"] {
     background-color: white;
 }
 
+.index header{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    border-bottom: 2px solid #AAAAAA;
+}
+
+.tresQuintos{
+    grid-column: 2/5;
+    justify-content: space-around;
+}
+
+.dosQuintos{
+    grid-column: 6/9;
+    justify-content: space-around;
+}
+
+.index .logo{
+    grid-column: 5/6;
+    width: 30px ;
+
+    justify-self: center;
+    align-self: center;
+}
+
+.perfil{
+    grid-column: 9/10;
+    justify-self: end;
+    align-self: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 10px;
+}
+
+.perfil img{
+    width: 35px;
+}
+
+.index nav{
+    display: flex;
+}
+
+.index i{
+    margin-right: 10px;
+}
+
+.index .orange{
+    color: #ff721b;
+}
+
+.index a{
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+}
+
 #formLogin:checked ~ .panelLogin{
     animation: showContent 0.8s ease forwards;
     animation-delay: 2s;
@@ -185,8 +249,10 @@ input[type="radio"] {
     pointer-events: auto;
 }
 #index:checked ~ .index {
+    opacity: 1;
+    /* ANIMACION ELIMINADA MIENTRAS ARREGAMOS LA PAGINA INDEX
     animation: showContent 0.8s ease forwards;
-    animation-delay: 2s;
+    animation-delay: 2s;*/
     pointer-events: auto;
 }
 

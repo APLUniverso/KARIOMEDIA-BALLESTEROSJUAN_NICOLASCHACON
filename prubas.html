@@ -6,43 +6,31 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="radio" name="screen" id="logo" checked>
-    <input type="radio" name="screen" id="formLogin">
-    <input type="radio" name="screen" id="exitoLogin">
+    <div class="contenedor">
+    <div>1</div>
+    <div class="segundo">CENTRO</div>
+    <div>3</div>
+    <div class="ultimo">DERECHA</div>
+</div>
 
-    <div class="logo screen">
-        <label for="formLogin" class="btn">Ir al Login</label>
-    </div>
-    
-    <div class="index screen">
-        <label for="exitoLogin" class="btn">Enviar</label>
-    </div>
-    
-    <div class="exito screen">
-        <label for="logo" class="btn">Volver al inicio</label>
-    </div>
     
 </body>
 
 <style>
-    body{
-        background-color: aliceblue;
-    }
+    .contenedor {
+    position: relative;
+    display: flex;
+}
 
-    #logo:checked ~ .logo,
-    #formLogin:checked ~ .index,
-    #exitoLogin:checked ~ .exito {
-        opacity: 1;
-        visibility: visible;
-        }
+.segundo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
-        .btn {
-    padding: 12px 20px;
-    background: #00b7b5;
-    color: white;
-    cursor: pointer;
-    border-radius: 8px;
-    display: inline-block;
+.ultimo {
+    position: absolute;
+    right: 0;
 }
 
 
