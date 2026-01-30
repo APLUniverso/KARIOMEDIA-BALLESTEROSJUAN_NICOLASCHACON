@@ -276,7 +276,7 @@ input[type="radio"] {
 
 .index .iconos{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-content: space-around;
     font-size: 30px;
     gap: 10px;
@@ -310,13 +310,29 @@ input[type="radio"] {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rojo{
     background: conic-gradient(
     #D10000 0% 65%,
     rgb(247, 247, 247) 65% 100%
     );
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.verde{
+    background: conic-gradient(
+    #0BA300 0% 65%,
+    rgb(247, 247, 247) 65% 100%
+    );
+}
+
+.amarillo{
+    background: conic-gradient(
+    #FFD000 0% 65%,
+    rgb(247, 247, 247) 65% 100%
+    );
 }
 
 .pie div {
