@@ -187,6 +187,13 @@ input[type="radio"] {
     border-bottom: 2px solid #AAAAAA;
 }
 
+.index main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .tresQuintos{
     grid-column: 2/5;
     justify-content: space-around;
@@ -237,6 +244,111 @@ input[type="radio"] {
     text-decoration: none;
     color: black;
     font-weight: 550;
+}
+
+.index p{
+    color: #494949;
+}
+
+.index h1{
+    margin: 30px;
+    font-weight: 100;
+}
+
+.index .btn{
+    cursor:pointer;
+    font-weight: 100;
+    color: white;
+    background-color: #ff721b;
+    padding: 1vh 5vh 1vh 5vh;
+    border-radius: 5vh;
+}
+
+.contenido{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.desaparecer{
+    opacity: 0;
+}
+
+.index .iconos{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    font-size: 30px;
+    gap: 10px;
+}
+
+.iconos i{
+    grid-column-start: 2;
+}
+
+.tabla h3{
+    font-size: 15px;
+}
+
+.tabla {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 2fr 2fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.tabla .primero{
+    margin-left: 15px;
+}
+
+.tabla .mitad{
+    justify-self: center;
+}
+
+.pie {
+    align-self: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: conic-gradient(
+    #D10000 0% 65%,
+    rgb(247, 247, 247) 65% 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 70%;
+    height: 70%;
+
+    color: #797979;
+    background: white;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.modelado{
+    grid-column: 1/10;
+
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 2fr 2fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+
+    
+    border: 2px solid #AAAAAA;
+    border-radius: 20px;
+    height: 50px;
+}
+
+.modelado p{
+    align-self: center;
+    color: #797979;
 }
 
 #formLogin:checked ~ .panelLogin{

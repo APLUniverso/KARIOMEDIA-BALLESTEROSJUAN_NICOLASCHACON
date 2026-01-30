@@ -6,32 +6,39 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="contenedor">
-    <div>1</div>
-    <div class="segundo">CENTRO</div>
-    <div>3</div>
-    <div class="ultimo">DERECHA</div>
-</div>
+    <div class="pie"><h1>20%</h1></div>
+
 
     
 </body>
 
 <style>
-    .contenedor {
-    position: relative;
+.pie {
+width: 120px;
+height: 120px;
+border-radius: 50%;
+background: conic-gradient(
+#00b7b5 0% 65%,
+#e0e0e0 65% 100%
+);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.pie h1 {
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    height: 80%;
+
+    background: white;
+    border-radius: 50%;
 }
 
-.segundo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
-.ultimo {
-    position: absolute;
-    right: 0;
-}
 
 
 </style>
