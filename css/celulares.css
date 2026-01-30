@@ -46,7 +46,9 @@
     }
 
     #sideBar:checked ~ .sideBar{
-        opacity: 1;
+        transform: translateX(0%);
+        pointer-events: auto;
+        box-shadow: 0 0 0 9999px rgba(0,0,0,.4);
     }
 }
 
@@ -57,5 +59,14 @@
 @media (min-width: 481px) and (max-width: 768px){
     body{
         background-color: blue;
+    }
+}
+
+@keyframes desplazameinto {
+    from{
+        transform: translateX(-20%);
+    }
+    to{
+        transform: translateX(0%);
     }
 }
