@@ -21,6 +21,7 @@
         opacity: 0;
         grid-column: 1/1;
         position: absolute;
+        pointer-events: none;
     }
     
     .dosQuintos{
@@ -28,13 +29,24 @@
         opacity: 0;
         grid-column: 1/1;
         position: absolute;
+        pointer-events: none;
     }
 
     .index label{
         grid-column: 1/4;
         display: block;
     }
-    
+
+    .añadirEliminarLable{
+        grid-column: 1/4;
+        display: block;
+        margin-left: 20px;
+    }
+
+    .añadirEliminarLable .logo{
+        margin-left: 20px;
+    }
+
     .index .logo{
         margin-left: 20px;
     }
