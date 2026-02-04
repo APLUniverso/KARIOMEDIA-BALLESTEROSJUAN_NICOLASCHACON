@@ -383,6 +383,7 @@ i{
 }
 
 .serchPanel input{
+    margin-top: 20px;
     font-size: 16px;
     border-radius: 10px;
     padding: 5px;
@@ -419,7 +420,7 @@ i{
     width: 200px;
     border-radius: 10px;
 
-    background-color: #ff721b;
+    background-color: #fc8942;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 
     transition: 0.3s ease;
@@ -448,4 +449,28 @@ i{
     color: #79360d;
     padding: 10px;
     text-align: center;
+}
+
+.p_pregunta{
+    text-align: center;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.contactarFormas{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+}
+
+@media (max-width:850px) {
+    .contactarFormas{
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (max-width:430px) {
+    .contactarFormas{
+        grid-template-columns: auto;
+    }
 }
