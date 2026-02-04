@@ -445,6 +445,12 @@ i{
     border-bottom: 3px solid #79360d;
 }
 
+main h2{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: normal;
+}
+
 .targetaAyuda p{
     color: #79360d;
     padding: 10px;
@@ -461,6 +467,7 @@ i{
     display: grid;
     grid-template-columns: repeat(4, auto);
     gap: 20px;
+    padding: 20px;
 }
 
 @media (max-width:850px) {
@@ -472,5 +479,68 @@ i{
 @media (max-width:430px) {
     .contactarFormas{
         grid-template-columns: auto;
+    }
+}
+
+/*CODIGO DE LA PAGUNA REPORTAR*/
+
+.reportar{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-self: center;
+
+    border: 2px solid  rgba(129, 129, 129, 0.315);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+
+    width: 600px;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.reportar form{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+
+    box-shadow: none;
+    border: none;
+}
+
+.reportar textarea{
+    width: 90%;
+    border: 1px solid #dbdbdb;
+    padding: 10px;
+}
+
+.reportar label{
+    width: 200px;
+    text-align: center;
+}
+
+.reportar img{
+    position: absolute;
+    height: 300px;
+    right: -50px;
+}
+
+h1{
+    text-align: center;
+}
+.finalMesage{
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width:790px) {
+    .reportar{
+        justify-content: center;
+        width: auto;
+    }
+    .reportar img{
+        right: 0;
+        display: none;
     }
 }
