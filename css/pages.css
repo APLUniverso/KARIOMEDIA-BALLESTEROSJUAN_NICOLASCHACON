@@ -371,6 +371,56 @@ i{
     transform: scale(1);
     pointer-events: auto;
 }
+/*CODIGO PARA PAGINA NOSOTROS*/
+
+.nosotros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.targetaNosotoros{
+    background-color: whitesmoke;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    width: 200px;
+    transition: ease 0.3s;
+}
+
+.targetaNosotoros:hover{
+    transform: scale(1.05);
+}
+
+.targetaNosotoros h3{
+    text-align: center;
+    margin-top: 20px;
+
+    border-bottom: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.targetaNosotoros p{
+    padding: 0;
+}
+
+.targetaNosotoros img{
+    width: 150px;
+    border-radius: 100px;
+}
 
 /*CODIGO DE LA PAGINA DE AYUDA*/
 
